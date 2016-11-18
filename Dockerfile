@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:trusty
 
 MAINTAINER SungKwang Song <saltfactory@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
