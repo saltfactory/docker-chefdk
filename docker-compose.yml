@@ -1,8 +1,11 @@
 chef:
   build: .
-  container_name: "saltfactory-chefdk"
+  container_name: saltfactory-chefdk
+  environment:
+    - USER=ubuntu
   ports:
     - "8443:443"
     - "8000:80"
+    - "8022:22"
   volumes:
-    - "/Volumes/Data/Repositories/Saltfactory/docker-chefdk/data:/var/data"
+    - "/Projects/Repositories/Saltfactory/docker-chefdk/data/hbn-chef-cookbooks:/home/ubuntu/chef-repo/cookbooks"
