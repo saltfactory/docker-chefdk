@@ -1,0 +1,8 @@
+chef:
+  build: .
+  container_name: "saltfactory-chefdk"
+  ports:
+    - "8443:443"
+    - "8000":80
+  volumes:
+    - "/Volumes/Data/Repositories/Saltfactory/docker-chefdk/data:/var/data"
